@@ -79,3 +79,7 @@ button:hover {
 #nav li a:hover {
 	background-color: #ffb900;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
