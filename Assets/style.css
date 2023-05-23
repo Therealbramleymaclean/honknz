@@ -98,3 +98,220 @@ img {
 	margin-right: auto;
 	width: 80%;
 }
+
+:root {
+	--wine-color-dark: #6b0902;
+	--wine-color-light: #ba0926;
+	--label-white: white;
+	--label-gray: #f2efef;
+	--bottle-green-light: #3c6132;
+	--bottle-green-dark: #213318;
+	--wrapper-dark: #231917;
+	--wrapper-light: #433834;
+
+	--background-color: #465387;
+}
+
+body {
+	background: var(--background-color);
+}
+
+:root {
+	--wine-color-dark: #6b0902;
+	--wine-color-light: #ba0926;
+	--label-white: white;
+	--label-gray: #f2efef;
+	--bottle-green-light: #3c6132;
+	--bottle-green-dark: #213318;
+	--wrapper-dark: #231917;
+	--wrapper-light: #433834;
+
+	--background-color: #465387;
+}
+
+body {
+	background: var(--background-color);
+}
+
+.box-canvas {
+	position: relative;
+	margin: auto;
+	display: block;
+	margin-top: 20vmin;
+	margin-bottom: 20vmin;
+	width: 15vmin;
+	height: 53vmin;
+}
+
+.bottle {
+	position: absolute;
+	bottom: 0;
+	width: 15vmin;
+	height: 40vmin;
+	background: linear-gradient(
+		to right,
+		var(--wine-color-dark),
+		var(--wine-color-light),
+		var(--wine-color-dark)
+	);
+	border-radius: 40% 40% 50% 50% / 30% 30% 10% 10%;
+}
+
+.bottle::after {
+	content: "";
+	position: absolute;
+	transform: rotate(20deg);
+	left: 3vmin;
+	top: 2vmin;
+	width: 3vmin;
+	height: 8vmin;
+	border-radius: 50% 50% 0 0;
+	box-shadow: -1vmin -1vmin 0 rgba(255, 255, 255, 0.2);
+}
+
+.label {
+	position: absolute;
+	width: 15vmin;
+	height: 10vmin;
+	background: linear-gradient(
+		to right,
+		var(--label-gray),
+		var(--label-white),
+		var(--label-gray)
+	);
+	top: 15vmin;
+}
+
+.label::before {
+	content: "";
+	position: absolute;
+	width: 15vmin;
+	height: 3vmin;
+	background: linear-gradient(
+		to right,
+		var(--wine-color-dark),
+		var(--wine-color-light),
+		var(--wine-color-dark)
+	);
+	border-radius: 50%;
+	top: -2vmin;
+}
+
+.label::after {
+	content: "";
+	position: absolute;
+	width: 15vmin;
+	height: 3vmin;
+	border-radius: 50%;
+	bottom: -1vmin;
+	background: linear-gradient(
+		to right,
+		var(--label-gray),
+		var(--label-white),
+		var(--label-gray)
+	);
+}
+
+.neck {
+	position: absolute;
+	width: 15vmin;
+	height: 14vmin;
+	background: linear-gradient(
+		to right,
+		var(--wine-color-dark),
+		var(--wine-color-light),
+		var(--wine-color-dark)
+	);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cutout {
+	width: 6.2vmin;
+	height: 16vmin;
+	position: absolute;
+	background: var(--background-color);
+}
+
+.cutout.left {
+	left: -1vmin;
+}
+
+.cutout.right {
+	right: -1vmin;
+}
+
+.glass {
+	position: absolute;
+	bottom: 3vmin;
+	width: 5vmin;
+	height: 4vmin;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(
+		to right,
+		var(--bottle-green-dark),
+		var(--bottle-green-light),
+		var(--bottle-green-dark)
+	);
+}
+
+.glass::after {
+	content: "";
+	position: absolute;
+	width: 5vmin;
+	height: 2vmin;
+	background: linear-gradient(
+		to right,
+		var(--bottle-green-dark),
+		var(--bottle-green-light),
+		var(--bottle-green-dark)
+	);
+	border-radius: 50%;
+	bottom: -0.5vmin;
+}
+
+.cap {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5vmin;
+	height: 7vmin;
+	background: linear-gradient(
+		to right,
+		var(--wrapper-dark),
+		var(--wrapper-light),
+		var(--wrapper-dark)
+	);
+}
+
+.cap::after {
+	content: "";
+	position: absolute;
+	width: 5vmin;
+	height: 2vmin;
+	bottom: -1vmin;
+	border-radius: 50%;
+	background: linear-gradient(
+		to right,
+		var(--wrapper-dark),
+		var(--wrapper-light),
+		var(--wrapper-dark)
+	);
+}
+
+.neck::after {
+	content: "";
+	position: absolute;
+	width: 5.5vmin;
+	height: 2vmin;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(
+		to right,
+		var(--wrapper-dark),
+		var(--wrapper-light),
+		var(--wrapper-dark)
+	);
+	top: 1vmin;
+}
