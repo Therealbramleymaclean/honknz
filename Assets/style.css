@@ -1,21 +1,20 @@
 /* 90s Blue Color Scheme */
 body {
 	background-color: #ffffff;
-	color: #5b5b5b;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: #2f2f2f;
+	font-family: "Gotham", "Arial Narrow", Arial, sans-serif;
 	font-size: 20px;
 }
 
 h1 {
-	color: #ffb900;
-	font-size: 72px;
-	text-shadow: 2px 2px #000000;
+	color: #ffffff;
+	font-size: 40px;
+	letter-spacing: 5%;
 }
 
 h2 {
 	color: #2f2f2f;
 	font-size: 36px;
-	text-shadow: 1px 1px #000;
 }
 
 a {
@@ -24,8 +23,7 @@ a {
 }
 
 a:hover {
-	color: #efa51b;
-	text-shadow: 2px 2px #fff;
+	color: #ffb900;
 }
 
 button {
@@ -42,17 +40,16 @@ button {
 button:hover {
 	background-color: #ffb900;
 	color: #0d47a1;
-	text-shadow: 2px 2px #ff0000;
 }
 
 #header {
-	background-color: #c5aa61;
+	background-color: #ffb900;
 	padding: 20px;
 	text-align: center;
 }
 
 #nav {
-	background-color: #313131;
+	background-color: #2f2f2f;
 	color: #ffffff;
 	padding: 10px;
 }
@@ -78,6 +75,7 @@ button:hover {
 
 #nav li a:hover {
 	background-color: #ffb900;
+	color: #000;
 }
 img {
 	max-width: 100%;
@@ -89,4 +87,14 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+}
+
+#footer {
+	min-height: auto;
+	background-color: #2f2f2f;
+	color: #fff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
