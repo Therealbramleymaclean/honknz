@@ -6,8 +6,12 @@ body {
 	font-size: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0% 10% 10% 0%;
+	padding: 0% 0% 0% 0%;
 	width: 100%;
+}
+
+html {
+	background-color: #2f2f2f;
 }
 
 h1 {
@@ -52,12 +56,15 @@ button:hover {
 	display: flex;
 	margin-left: auto;
 	margin-right: 2%;
-	width: 25vw;
+	width: 5vw;
 }
 
-@media screen and (max-width: 780px) {
-	#logo {
-		width: 1vw;
+@media screen and (max-width: 600px) {
+	#main {
+		width: 95% !important;
+	}
+	#header {
+		font-size: 1vw;
 	}
 }
 
@@ -78,6 +85,7 @@ button:hover {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	margin-top: 15%;
 }
 
 #nav li {
@@ -105,7 +113,7 @@ img {
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
+	width: 80%;
 }
 
 #footer {
