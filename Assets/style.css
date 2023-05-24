@@ -42,8 +42,23 @@ button:hover {
 	color: #0d47a1;
 }
 
+#logo {
+	height: auto;
+	min-width: 50px;
+	display: flex;
+	margin-left: auto;
+	margin-right: 2%;
+	width: 1vw;
+}
+
+@media screen and (min-width: 480px) {
+	#logo {
+		width: 1vw;
+	}
+}
+
 #header {
-	background-color: #f59b2f;
+	background-color: #fff;
 	padding: 20px;
 	text-align: center;
 }
