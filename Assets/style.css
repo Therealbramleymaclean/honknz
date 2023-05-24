@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-	color: #ffb900;
+	color: #f59b2f;
 }
 
 button {
@@ -38,12 +38,12 @@ button {
 }
 
 button:hover {
-	background-color: #ffb900;
+	background-color: #f59b2f;
 	color: #0d47a1;
 }
 
 #header {
-	background-color: #ffb900;
+	background-color: #f59b2f;
 	padding: 20px;
 	text-align: center;
 }
@@ -74,7 +74,7 @@ button:hover {
 }
 
 #nav li a:hover {
-	background-color: #ffb900;
+	background-color: #f59b2f;
 	color: #000;
 }
 img {
@@ -109,24 +109,7 @@ img {
 	--wrapper-dark: #231917;
 	--wrapper-light: #433834;
 
-	--background-color: #465387;
-}
-
-body {
-	background: var(--background-color);
-}
-
-:root {
-	--wine-color-dark: #6b0902;
-	--wine-color-light: #ba0926;
-	--label-white: white;
-	--label-gray: #f2efef;
-	--bottle-green-light: #3c6132;
-	--bottle-green-dark: #213318;
-	--wrapper-dark: #231917;
-	--wrapper-light: #433834;
-
-	--background-color: #465387;
+	--background-color: #fff;
 }
 
 body {
