@@ -4,9 +4,10 @@ body {
 	color: #2f2f2f;
 	font-family: "Gotham", "Arial Narrow", Arial, sans-serif;
 	font-size: 20px;
-	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0% 10% 10% 0%;
+	width: 100%;
 }
 
 h1 {
@@ -51,10 +52,10 @@ button:hover {
 	display: flex;
 	margin-left: auto;
 	margin-right: 2%;
-	width: 1vw;
+	width: 25vw;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 780px) {
 	#logo {
 		width: 1vw;
 	}
@@ -114,7 +115,9 @@ img {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
 :root {
